@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/4d50fc5e66.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+  </head>
+  <body class="themebody">
+    <div class="container">
+      <div id="cartoon_illustration"></div>
+      <div class="form_container">
+        <div class="form_header">
+          <h3>Login usuário</h3>
+          <p>Seja criativo!</p>
+        </div>
+        <form class="form" id="form" method="get">
+          <label id="labelEmailUser" for="email">Email de usuário</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@recados.com"
+            required
+          />
+
+          <i class="fa-solid fa-eye"></i>
+          <label id="labelPasswordUser" for="senha">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="4"
+            placeholder="Senha"
+            required
+          />
+          <button type="submit" id="button_entrar" form="form" value="enviar">
+            Entrar
+          </button>
+        </form>
+        <label id="labelErrorMsg" for=""></label>
+        <div class="loader"></div>
+        <p>
+          Não possui uma conta?
+          <a href="/cadastrarUser/cadastro.html">Cadastre-se</a>
+        </p>
+        <div class="form_button">
+          <button>
+            <img src="/assets/google.svg" alt="" />
+            <span>Entrar com Google</span>
+          </button>
+          <button>
+            <img src="/assets/instagram.svg" alt="" />
+          </button>
+          <button>
+            <img src="/assets/twitter.svg" alt="" />
+          </button>
+          <!-- modal -->
+          <section class="modal hidden">
+            <div>
+              <h3 id="modalTitle"></h3>
+              <p id="modalText"></p>
+            </div>
+            <button type="submit" class="btnModal">Fechar</button>
+          </section>
+
+          <div class="overlay hidden"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

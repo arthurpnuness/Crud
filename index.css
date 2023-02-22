@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400&display=swap");
+
+:root {
+  --primary-text: #2a225a;
+  --text: #7f73a1;
+  --form-bg: #fafbff;
+  --bg: #eaeefd;
+}
+
+* {
+  transition-property: background color;
+  transition-duration: 600ms;
+}
+
+body {
+<<<<<<< HEAD
+  background-image: linear-gradient(to right, #c200f3b7, #ff715b);
+=======
+  background-image: linear-gradient(to right, #ff4f61, #ff715b);
+>>>>>>> 552161da5a6febc8cef1d09c75cfb4c4deb756cc
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 8px 0px;
+  border-radius: 20px;
+}
+
+#cartoon_illustration {
+  flex-grow: 1;
+<<<<<<< HEAD
+=======
+  background-image: url("/assets/4529196.jpg");
+>>>>>>> 552161da5a6febc8cef1d09c75cfb4c4deb756cc
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.form_header {
+  padding: 20px 0;
+  border-top: solid 1px var(--bg);
+}
+
+.form_container a {
+  color: var(--primary-text);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+  background-color: var(--form-bg);
+  color: var(--text);
+}
+
+.form_button {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.form_button button {
+  margin: 0 5px;
+}
+
+.form_button button:first-child {
+  flex: 1;
+}
+
+.form-buttons button span {
+  font-size: 10px;
+}
+
+.form_button img {
+  width: 0.8rem;
+  position: relative;
+  top: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px var(--bg);
+  border-bottom: solid 1px var(--bg);
+  padding: 20px 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-text);
+  margin: 0;
+}
+.form_header p {
+  margin: 1rem;
+}
+p,
+#labelErrorMsg {
+  font-size: small;
+}
+#labelErrorMsg {
+  margin: 5px;
+}
+input {
+  color: var(--dark);
+  margin: 10px 0;
+  border: 2px solid #f0f0f0;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--bg);
+  outline: none;
+}
+
+input:focus {
+  background-color: #f0f0f0;
+}
+
+.fa-eye {
+  text-align: right;
+  color: var(--text);
+  position: relative;
+  top: 3.4rem;
+  cursor: pointer;
+  left: 14rem;
+  width: 11px;
+}
+
+button {
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in;
+}
+
+button:hover {
+  transform: scale(0.96);
+}
+
+a:hover {
+  color: var(--text);
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+<<<<<<< HEAD
+  background-image: linear-gradient(to right, #9e00fa, #ff715b);
+=======
+  background-image: linear-gradient(to right, #ff4f61, #ff715b);
+>>>>>>> 552161da5a6febc8cef1d09c75cfb4c4deb756cc
+  color: white;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 450px;
+  padding: 1.3rem;
+  min-height: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal h3 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.modal p {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 2rem;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  margin: auto;
+  border: 10px solid #ced0d3;
+  border-radius: 50%;
+  border-top: 10px solid #ff4f61;
+  width: 15px;
+  height: 15px;
+  animation: spinner 1s linear infinite;
+  display: none;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

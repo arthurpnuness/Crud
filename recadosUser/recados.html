@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="../recadosUser/recados.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="hideall">
+  <div class="container">
+    <div class="header">
+      <div class="typewriter">
+        <h2 id="welcomeUser">Bem vindo</h2>
+      </div>
+      <div class="">
+        <button onclick="openModal()" id="new" class="btnStyleNew">Incluir</i></button>
+      <button id="logout" class="btnStyleLogout">Sair</i></button>
+      </div>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th class="msgTitulo">Título</th>
+            <th class="msgStyle">Mensagem</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td></td>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-titulo">Título</label>
+          <input id="m-titulo" type="text" required />
+          <label for="m-mensagem">Mensagem</label>
+          <input id="m-mensagem" type="text" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script src="../recadosUser/recados.js"></script>
+</body>
+
+</html>

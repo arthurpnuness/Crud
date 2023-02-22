@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/reset.css" />
+    <link rel="stylesheet" href="cadastro.css" />
+    <script
+      src="https://kit.fontawesome.com/4d50fc5e66.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cadastro</title>
+  </head>
+  <body class="themebody">
+    <div class="container">
+      <div id="cartoon_illustration"></div>
+      <div class="form_container">
+        <div class="form_header">
+          <h3>Criar nova conta</h3>
+        </div>
+        <form class="form" id="form" method="get">
+          
+          <label id="labelUserName" for="username">Nome de usuário</label>
+          <input
+            type="text"
+            name="completeName"
+            id="username"
+            minlength="4"
+            title="Campo deve conter 4 caracteres ou mais"
+            placeholder="Nome completo"
+            required
+          />
+
+          <label id="labelEmailUser" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@recados.com"
+            pattern=".+@recados\.com"
+            title="Email deve conter '@recados.com'"
+            required
+          />
+
+          <label id="labelPassword" for="password">Senha</label>
+          <i id="peekPass" class="fa-solid fa-eye"></i>
+          <input
+            type="password"
+            name="senha"
+            id="password"
+            minlength="6"
+            placeholder="Senha mínima 6 caracteres"
+            required
+          />
+
+          <label id="labelPassword2" for="password2"></label>
+          <i id="peekPass2" class="fa-solid fa-eye"></i>
+          <input
+          type="password"
+          name="senha2"
+          id="password2"
+          minlength="6"
+          placeholder="Repita sua senha"
+          required
+          />
+          
+          <button type="submit" id="btn_cadastro" for="form" value="enviar">Criar conta</button>
+          <p><a href="/index.html">Retornar para página de login</a></p>
+        <div class="form_button">
+        </form>
+      </div>
+    </div>
+<!-- modal -->
+    <section class="modal hidden">
+      <div>
+        <h3 id="modalTitle"></h3>
+        <p id="modalText"> </p>
+      </div>
+      <button class="btnModal">Fechar</button>
+    </section>
+    
+    <div class="overlay hidden"></div>
+    <script src="cadastro.js"></script>
+  </body>
+</html>
